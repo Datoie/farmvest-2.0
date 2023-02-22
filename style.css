@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(img/icon/section-1/star-white.svg),
+    url(img/icon/section-1/dollar.svg),
+    url(img/icon/section-1/small-ellips.svg),
+    url(img/icon/section-1/money-bag.svg),
+    url(img/icon/section-1/small-ellips-white.svg),
+    url(img/icon/section-1/currency.svg),
+    url(img/icon/section-1/ellipse.svg),
+    url(img/icon/section-1/ellipse-2.svg);
+    /*                        1     2      3       4       5    6     7     8*/
+    background-position-x: 20.15625%, 8.229166666666666%, 28.749999999999996%, 67.70833333333334%, 76.51041666666667%, 90.46875%, 0%, 0;
+    background-position-y: 420px, 680px, 774px, 180px, 435px, 386px, 0, 0;
+    background-repeat: no-repeat;
+    height: 880px;
+}
+div {
+    height: 1000vh;
+}
