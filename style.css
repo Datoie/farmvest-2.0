@@ -1,8 +1,91 @@
+/* root */
+:root {
+    /* font size */
+    --fs-200: 1.125rem; /*18px*/
+    --fs-300: 1.4rem; /*22.2px*/
+    --fs-400: 1.5rem; /*24px*/
+    --fs-450: 2.25rem; /*36px*/
+    --fs-500: 3.5rem; /*56px*/
+    --fs-600: 4.375rem; /*70px*/
+
+    /* font family*/
+    --ff-lato: font-family: 'Lato', sans-serif;
+    --ff-spartan: font-family: 'League Spartan', sans-serif;
+
+    /* font wight */
+    --fw-400: 400;
+    --fw-700: 700;
+
+    /* line heght */
+    --lh-p: 1.99rem;
+
+    /* color */
+    --clr-primary-100: hsla(0, 0%, 100%, 1);
+    --clr-primary-200: hsla(120, 67%, 42%, 1);
+    
+    --bg-clr-100: rgba(255, 255, 255, 0.05);
+}
+/* utility classes */
+/* font size */
+.fs-200 {
+    font-size: var(--fs-200);
+}
+.fs-300 {
+    font-size: var(--fs-300);
+}
+.fs-400 {
+    font-size: var(--fs-400);
+}
+.fs-450 {
+    font-size: var(--fs-450);
+}
+.fs-500 {
+    font-size: var(--fs-500);
+}
+.fs-600 {
+    font-size: var(--fs-600);
+}
+
+/* font weight */
+.fw-400 {
+    font-weight: var(--fw-400);
+}
+.fw-700 {
+    font-weight: var(--fw-700);
+}
+
+/* inline heigt */
+.ih-p {
+    line-height: var(--lh-p);
+}
+
+/* color */
+.clr-primary-100 {
+    color: var(--clr-primary-100);
+}
+.clr-primary-200 {
+    color: var(--clr-primary-200);
+}
+.bg-clr-100 {
+    background-color: var(--bg-clr-100);
+}
+
+/* font family*/
+.ff-lato {
+    font-family: var(--ff-lato);
+}
+.ff-spartan {
+    font-family: var(--ff-spartan);
+}
 * {
     margin: 0;
     padding: 0;
+    list-style: none;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-family: 'League Spartan', sans-serif;      
 }
+
 body {
     background-image: url(img/icon/section-1/star-white.svg),
     url(img/icon/section-1/dollar.svg),
