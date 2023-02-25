@@ -201,3 +201,17 @@ h1 {
         width: 346px;
     }
 }
+/* section -2 */
+.section-2-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 13%;
+}
+@media (max-width: 1200px) {
+    .section-2-container {
+        flex-direction: column;
+    }
+    .section-2-container img {
+        margin-bottom: 1rem;
+    }
+}
