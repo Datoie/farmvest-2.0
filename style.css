@@ -100,7 +100,11 @@ body {
     background-position-x: 20.15625%, 8.229166666666666%, 28.749999999999996%, 67.70833333333334%, 76.51041666666667%, 90.46875%, 0%, 0;
     background-position-y: 420px, 680px, 774px, 180px, 435px, 386px, 0, 0;
     background-repeat: no-repeat;
-    height: 880px;
+    width: 100%;
+    height: auto;
+}
+.hover:hover {
+    color: var(--clr-primary-200);
 }
 /* header */
 .header-container {
@@ -112,6 +116,8 @@ body {
 .col a {
     margin-right: 2.75rem;
     color: var(--clr-primary-100);
+    position: relative;
+    left: 20%;
 }
 .menu-icon {
     display: none;
@@ -138,6 +144,16 @@ body {
     }
     .menu-icon {
         display: block;
+    }
+    body {
+        background-image: none,
+        url(img/icon/section-1/dollar.svg),
+        url(img/icon/section-1/small-ellips.svg),
+        none,
+        url(img/icon/section-1/small-ellips-white.svg),
+        url(img/icon/section-1/currency.svg),
+        url(img/icon/section-1/ellipse.svg),
+        url(img/icon/section-1/ellipse-2.svg);
     }
 }
 /* section-1 */
@@ -374,12 +390,51 @@ h1 {
     padding: 1.375rem 9.1rem;
     border-radius: 0.625rem;
     border: 0;
+    cursor: pointer;
 }
+
 @media (max-width: 1500px) {
     .container-section-5 {
         flex-direction: column;
     }
     .seection-5-btn {
         margin-bottom: 10rem;
+    }
+    .section-5-h2 {
+        font-size: var(--fs-450);
+    }
+}
+/* section 6 */
+.section-6 {
+margin: 0 auto;
+}
+.section-6-container {
+    display: flex;
+    justify-content: space-between;
+}
+.col-section-6 {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg-clr-100);
+    border-radius: 1.25rem;
+}
+.col-section-6 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media (max-width: 1200px) {
+    .section-6-container {
+        flex-direction: column;
+    }
+    .section-6-h2 {
+        font-size: var(--fs-450);
+    }
+    .col-section-6 {
+        flex-direction: column;
+    }
+    .col-section-6 span {
+        margin-top: 10rem;
+        margin-bottom: 2rem;
     }
 }
