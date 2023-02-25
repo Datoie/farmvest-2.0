@@ -215,3 +215,57 @@ h1 {
         margin-bottom: 1rem;
     }
 }
+/* section-3 */
+/* col-2 */
+.section-3-container {
+    display: flex;
+    justify-content: space-between;
+}
+.col-2 {
+    background-color: var(--bg-clr-100);
+    padding: 30rem 24rem;
+    border-radius: 1.25rem;
+    background-image: url(img/icon/bg-icon.svg);
+     width: 660px;
+    height: 601px;
+} 
+.section-3-bg {
+    background-image: url(img/img/section-2/boy-img.png), url(img/icon/bg-icon.svg);
+    width: 660px;
+    height: 601px;
+    background-size: 88%;
+    background-position: center, top;
+    background-position-x:center,right;
+    background-repeat: no-repeat;
+}
+
+/* col 1 */
+.col-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.section-3-bx {
+    display: flex;
+    align-items: center
+}
+.section-3-bx img {
+    background-color: hsla(120, 100%, 25%, 0.1);
+    padding: 1.68rem;
+    border-radius: 50%;
+    margin-right: 2.1rem;
+}
+@media (max-width: 1500px) {
+    .section-3-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .col-1 {
+        margin-bottom: 10rem;
+    }
+    .section-3-bg {
+        width: 100%;
+        padding: 20rem 0;
+    }
+}
