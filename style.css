@@ -268,4 +268,81 @@ h1 {
         width: 100%;
         padding: 20rem 0;
     }
+    .section-3-bx {
+        flex-direction: column;
+    }
+    .section-3-bx img {
+        margin-bottom: 2rem;
+    }
+}
+@media (max-width: 1450px) {
+    .col-2{
+        padding: 0;
+    }
+}
+/* section  4*/
+.section-4-container {
+    display: flex;
+}
+.col-1-section-4 {
+    background-color: var(--bg-clr-100);
+    padding: 23rem 24rem;
+    border-radius: 1.25rem;
+    background-image: url(img/icon/bg-icon.svg);
+    
+    width: 660px;
+    height: 601px;
+} 
+.section-4-bg {
+    background-image: url(img/img/section-3/boy-img.png), url(img/icon/section-3/sircle.svg);
+    width: 660px;
+    height: 601px;
+    background-size: 88%;
+    background-position: center, bottom;
+    background-position-x:center,left;
+    background-repeat: no-repeat;
+}
+/* column 2 */
+.container-setion-4 {
+    display: flex;
+    justify-content: space-between;
+}
+.section-4-bx {
+    display: flex;
+    background: var(--bg-clr-100);
+    margin-bottom: 1.5rem;
+    padding: 1.5rem 1.875rem;
+}
+.arrow {
+    position: absolute;
+    right: 1.875rem;
+    top: 2rem;
+    right: .8rem;
+    cursor: pointer;
+}
+.absolute-container {
+    position: relative;
+    cursor: pointer;
+}
+.absolute-container a {
+    cursor: pointer;
+}
+@media (max-width: 1500px) {
+    .col-1-section-4 {
+        margin-bottom: 10rem;
+    }
+    .section-4-bg {
+        width: 100%;
+        padding: 20rem 0 var(--clr-primary-100);
+    }
+    .col-2-section-4 h2 {
+        font-size: var(--fs-450);
+    }
+    .container-setion-4 {
+        flex-direction: column;
+    }
+    /* sypography  */
+    .section-4-bx h2 {
+        font-size: var(--fs-400);
+    }
 }
