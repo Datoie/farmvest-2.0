@@ -346,3 +346,40 @@ h1 {
         font-size: var(--fs-400);
     }
 }
+/* section 4 */
+.container-section-5 {
+    display: flex;
+}
+/* section-5 */
+.container-section-5 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-5-bx-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4.123rem;
+}
+.section-5-bx-container img {
+    margin-right: 3.25rem;
+}
+.girl-section-5 {
+    height: auto;
+    max-width: 100%;
+}
+/* btn section 5*/
+.seection-5-btn {
+    background-color: var(--clr-primary-200);
+    padding: 1.375rem 9.1rem;
+    border-radius: 0.625rem;
+    border: 0;
+}
+@media (max-width: 1500px) {
+    .container-section-5 {
+        flex-direction: column;
+    }
+    .seection-5-btn {
+        margin-bottom: 10rem;
+    }
+}
