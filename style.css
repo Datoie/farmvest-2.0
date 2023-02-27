@@ -1,6 +1,8 @@
 /* root */
 :root {
     /* font size */
+    --fs-50: .75rem; /*12px*/
+    --fs-100: .875rem; /*14px*/
     --fs-200: 1.125rem; /*18px*/
     --fs-300: 1.4rem; /*22.2px*/
     --fs-400: 1.5rem; /*24px*/
@@ -27,6 +29,12 @@
 }
 /* utility classes */
 /* font size */
+.fs-50 {
+    font-size: var(--fs-50);
+}
+.fs-100 {
+    font-size: var(--fs-100);
+}
 .fs-200 {
     font-size: var(--fs-200);
 }
@@ -439,15 +447,13 @@ margin: 0 auto;
     }
 }
 /* section 7 */
-.section-7 {
+.section-7-container {
     background-image: url(img/icon/section-7/circle-bg.svg);
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
     height: auto;
     background-size: 66rem;
-}
-.section-7-container {
     background-color: var(--bg-clr-100);
 
     border-radius: 1.25rem;
@@ -469,4 +475,76 @@ margin: 0 auto;
         align-items: center;
         justify-content: center;
     }   
+}
+/* footer */
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+}
+.footer-container-up{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-col-3-container {
+    display: flex;
+    flex-direction: column;
+}
+.footer-col-3 {
+    display: flex;
+}
+.footer-col-3 {
+    display: flex;
+    margin-right: 3rem;
+}
+/* dowon */
+.footer-border {
+    margin-top: 6.25rem;
+    margin-bottom: 3.75rem;
+    border-bottom: 1px solid var(--clr-primary-100);
+    height: 0;
+    width: 100%;
+}
+.bootom-separate-container {
+    display: flex;
+    justify-content: space-between;
+}
+.bootom-separate-container h2 {
+    margin-right: 2.5rem;
+}
+@media (max-width:1300px) {
+    .footer {
+        flex-direction: column;
+    }
+    .footer-col-3 {
+        margin: 0;
+    }
+    .footer-col-3-container {
+        margin-top: 2rem;
+    }
+    .bootom-separate-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .bootom-separate-container div {
+        margin-top: 2rem;
+    }
+    .footer-container-up {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-container-down {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bootom-separate-container div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* align-items: start */
+    }
 }
